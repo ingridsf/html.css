@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height:100vh; /*100% da altura*/
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px; /*cima*/
+    /*text-transform: uppercase; tudo em letra maiuscula*/
+    font-variant: small-caps; /* preferencia, as primeiras letras ficam maiores*/
+}
+
+header > p {
+    padding-bottom: 50px; /*baixo*/
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder; /*negrito*/
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/*criar espaço para ter efeito parallax*/
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*espaçamento das frases */
+    padding-left: 30px; /* afastar da margem*/
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color:white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
